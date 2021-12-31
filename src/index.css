@@ -68,7 +68,7 @@
   }
   .content-list {
     @apply flex flex-col items-center 
-    h-[calc(100vh_-_8rem)] w-full 
+    h-[calc(100vh_-_12rem)] w-full 
     mt-16 ml-0 mx-auto pr-0 pl-16 pb-12 
     overflow-y-scroll;
   }

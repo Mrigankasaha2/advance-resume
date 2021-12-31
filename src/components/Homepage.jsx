@@ -11,9 +11,9 @@ export default function Homepage() {
           </span>
         </h1>
         <div className="max-w-3xl mx-auto">
-          <p className="text-xl text-gray-600 dark:text-stone-300 mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
             I am a software developer with more than 4 years of experience and
-            currently working for a Big 4 accountancy farm.
+            currently working for a Big4 accountancy farm.
           </p>
           <div className="max-w-xs mx-auto sm:max-w-none flex flex-col sm:flex-row justify-center items-center">
             <a
