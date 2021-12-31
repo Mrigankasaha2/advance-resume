@@ -68,7 +68,7 @@
   }
   .content-list {
     @apply flex flex-col items-center 
-    h-[calc(100vh_-_8rem)] w-full 
+    h-[calc(100vh_-_12rem)] w-full 
     mt-16 ml-0 mx-auto pr-0 pl-16 pb-12 
     overflow-y-scroll;
   }
@@ -77,6 +77,11 @@
     animation-fill-mode: both;
     -webkit-animation: progressBar 3s ease-in-out;
     -webkit-animation-fill-mode: both;
+  }
+  .btn {
+    padding: 0.75rem 2rem;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+      0 4px 6px -2px rgba(0, 0, 0, 0.02);
   }
 }
 

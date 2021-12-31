@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
 import Aboutme from "./Aboutme";
+import Footer from "./Footer";
 
 export default function ContentContainer() {
   return (
@@ -22,6 +23,7 @@ export default function ContentContainer() {
           </Routes>
         </BrowserRouter>
       </div>
+      <Footer />
     </div>
   );
 }
