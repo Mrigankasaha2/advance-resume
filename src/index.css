@@ -1,13 +1,117 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mt-2 mb-2 mx-auto  
+  bg-gray-400 hover:bg-blue-600 dark:bg-gray-800 
+  text-blue-500 dark:text-green-500 hover:text-white
+    hover:rounded-xl rounded-3xl
+    transition-all duration-300 ease-linear
+    cursor-pointer shadow-lg;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+    text-white bg-gray-900 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-left;
+  }
+
+  .sidebar-hr {
+    @apply bg-gray-200 dark:bg-gray-800 
+    border border-gray-200 dark:border-gray-800 rounded-full
+    mx-2;
+  }
+
+  .top-navigation {
+    @apply flex flex-row items-center justify-evenly 
+    bg-gray-300 dark:bg-gray-700 bg-opacity-90 
+    w-full h-16 
+    m-0 
+    shadow-lg;
+  }
+
+  .top-navigation-icon {
+    @apply text-gray-500
+    mr-3 ml-4
+    transition duration-300 ease-in-out 
+    hover:text-blue-500 dark:hover:text-yellow-400
+    cursor-pointer;
+  }
+
+  .top-navigation-icon:first {
+    @apply ml-auto mr-4;
+  }
+
+  .title-text {
+    @apply text-xl text-gray-500 tracking-wider font-semibold text-opacity-80 
+    mr-auto ml-20 my-auto 
+    transition duration-300 ease-in-out;
+  }
+
+  .content-container {
+    @apply flex flex-col 
+    bg-gray-300 dark:bg-gray-700
+    m-0 
+    h-full w-full 
+    overflow-hidden;
+  }
+  .content-list {
+    @apply flex flex-col items-center 
+    h-[calc(100vh_-_8rem)] w-full 
+    mt-16 ml-0 mx-auto pr-0 pl-16 pb-12 
+    overflow-y-scroll;
+  }
+  .animation-progress {
+    animation: progressBar 3s;
+    animation-fill-mode: both;
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 dark:bg-green-400;
+}
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
