@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopNavigation from "./TopNavigation";
 import Homepage from "./Homepage";
 import Skills from "./Skills";
@@ -12,7 +12,6 @@ export default function ContentContainer() {
     <div className="content-container">
       <TopNavigation />
       <div className="content-list">
-        <span>This is the main content</span>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Homepage />} />
