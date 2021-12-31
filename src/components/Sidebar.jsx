@@ -1,6 +1,7 @@
 import React from "react";
-import { BsPlus, BsFillLightningFill, BsGearFill } from "react-icons/bs";
-import { FaFire, FaPoo } from "react-icons/fa";
+import { FaHome, FaUserGraduate, FaUserAlt } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import { SiVisualstudiocode } from "react-icons/si";
 
 export default function Sidebar() {
   return (
@@ -8,13 +9,13 @@ export default function Sidebar() {
       className="fixed top-0 left-0 h-screen w-16 flex flex-col
                   bg-white dark:bg-gray-900 shadow-lg"
     >
-      <SideBarIcon icon={<FaFire size="28" />} />
+      <SideBarIcon icon={<FaHome size="28" />} text="Home" />
       <Divider />
-      <SideBarIcon icon={<BsPlus size="32" />} />
-      <SideBarIcon icon={<BsFillLightningFill size="20" />} />
-      <SideBarIcon icon={<FaPoo size="20" />} />
+      <SideBarIcon icon={<MdWork size="32" />} text="Experience" />
+      <SideBarIcon icon={<SiVisualstudiocode size="20" />} text="Skills" />
+      <SideBarIcon icon={<FaUserGraduate size="20" />} text="Education" />
       <Divider />
-      <SideBarIcon icon={<BsGearFill size="22" />} />
+      <SideBarIcon icon={<FaUserAlt size="22" />} text="About" />
     </div>
   );
 }
