@@ -4,6 +4,9 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // class, 'media' or boolean
   theme: {
+    screen: {
+      mobile: "320px",
+    },
     extend: {
       colors: {
         gray: {

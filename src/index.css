@@ -13,8 +13,8 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
-  bg-gray-400 hover:bg-green-600 dark:bg-gray-800 
-  text-green-500 hover:text-white
+  bg-gray-400 hover:bg-blue-600 dark:bg-gray-800 
+  text-blue-500 dark:text-green-500 hover:text-white
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
     cursor-pointer shadow-lg;
@@ -68,9 +68,15 @@
   }
   .content-list {
     @apply flex flex-col items-center 
-    h-full w-full 
-    mt-0 ml-0 mx-auto px-0 pb-12 
+    h-[calc(100vh_-_8rem)] w-full 
+    mt-16 ml-0 mx-auto pr-0 pl-16 pb-12 
     overflow-y-scroll;
+  }
+  .animation-progress {
+    animation: progressBar 3s;
+    animation-fill-mode: both;
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode: both;
   }
 }
 
@@ -82,4 +88,30 @@
 
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-500 dark:bg-green-400;
+}
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
