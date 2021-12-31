@@ -45,7 +45,7 @@
     @apply text-gray-500
     mr-3 ml-4
     transition duration-300 ease-in-out 
-    hover:text-pink-400 
+    hover:text-blue-500 dark:hover:text-yellow-400
     cursor-pointer;
   }
 
@@ -65,6 +65,12 @@
     m-0 
     h-full w-full 
     overflow-hidden;
+  }
+  .content-list {
+    @apply flex flex-col items-center 
+    h-full w-full 
+    mt-0 ml-0 mx-auto px-0 pb-12 
+    overflow-y-scroll;
   }
 }
 
