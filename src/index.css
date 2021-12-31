@@ -87,7 +87,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-500 dark:bg-green-400;
+  @apply bg-blue-500 dark:bg-green-400;
 }
 @keyframes progressBar {
   0% {
