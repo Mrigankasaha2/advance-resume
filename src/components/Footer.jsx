@@ -21,7 +21,7 @@ export default function Footer() {
           Made by{" "}
           <a
             className="text-blue-600 hover:underline"
-            href="https://cruip.com/"
+            href="https://mriganka-resume-react.web.app/"
           >
             Mriganka Shekhar Saha
           </a>
