@@ -23,10 +23,8 @@ import { FaSass, FaBootstrap } from "react-icons/fa";
 export default function Skills() {
   return (
     <>
-      <div className="bg-white dark:bg-gray-600 p-6 rounded-lg shadow-lg w-5/6">
-        <h2 className="text-1xl leading-7 sm:text-3xl sm:truncate mb-4 text-blue-500 dark:text-green-500">
-          Skills
-        </h2>
+      <div className="card-div">
+        <h2 className="skill-header-text">Skills</h2>
         <Skill icon={<SiCsharp />} skilltitle=".NET Core" covered="w-5/6" />
         <Skill
           icon={<SiMicrosoftazure />}
@@ -42,60 +40,45 @@ export default function Skills() {
         />
       </div>
       <br></br>
-      <div className="bg-white dark:bg-gray-600 p-6 rounded-lg shadow-lg w-5/6">
-        <h2 className="text-1xl leading-7 sm:text-3xl sm:truncate mb-4 text-blue-500 dark:text-green-500">
-          Other Skills
-        </h2>
+      <div className="card-div">
+        <h2 className="skill-header-text">Other Skills</h2>
         <div className="grid sm:flex place-items-center">
           <Otherskill
-            icon={<SiTypescript className="text-blue-500" size="28" />}
+            icon={<SiTypescript className="text-blue-500" size="50" />}
           />
           <Otherskill
-            icon={<SiJavascript className="text-yellow-500" size="28" />}
+            icon={<SiJavascript className="text-yellow-500" size="50" />}
           />
-          <Otherskill icon={<SiJquery className="text-blue-300" size="28" />} />
+          <Otherskill icon={<SiJquery className="text-blue-300" size="50" />} />
           <Otherskill
-            icon={<SiHtml5 className="text-orange-500" size="28" />}
+            icon={<SiHtml5 className="text-orange-500" size="50" />}
           />
-          <Otherskill icon={<SiCss3 className="text-yellow-500" size="28" />} />
-          <Otherskill icon={<FaSass className="text-pink-500" size="28" />} />
+          <Otherskill icon={<SiCss3 className="text-yellow-500" size="50" />} />
+          <Otherskill icon={<FaSass className="text-pink-500" size="50" />} />
           <Otherskill
-            icon={<FaBootstrap className="text-purple-500" size="28" />}
-          />
-          <Otherskill
-            icon={<SiTailwindcss className="text-blue-400" size="28" />}
+            icon={<FaBootstrap className="text-purple-500" size="50" />}
           />
           <Otherskill
-            icon={<SiMaterialdesign className="text-gray-400" size="28" />}
+            icon={<SiTailwindcss className="text-blue-400" size="50" />}
+          />
+          <Otherskill
+            icon={<SiMaterialdesign className="text-gray-400" size="50" />}
           />
         </div>
       </div>
       <br></br>
-      <div className="bg-white dark:bg-gray-600 p-6 rounded-lg shadow-lg w-5/6">
-        <h2 className="text-1xl leading-7 sm:text-3xl sm:truncate mb-4 text-blue-500 dark:text-green-500">
-          Tools Used
-        </h2>
+      <div className="card-div">
+        <h2 className="skill-header-text">Tools Used</h2>
         <div className="grid sm:flex text-center">
           <Tools
-            icon={<SiVisualstudio className="text-purple-500" size="28" />}
-            toolname="Visual Studio"
+            icon={<SiVisualstudio className="text-purple-500" size="50" />}
           />
           <Tools
-            icon={<SiVisualstudiocode className="text-blue-500" size="28" />}
-            toolname="Visual Studio Code"
+            icon={<SiVisualstudiocode className="text-blue-500" size="50" />}
           />
-          <Tools
-            icon={<SiAzuredevops className="text-blue-500" size="28" />}
-            toolname="Azure DevOps"
-          />
-          <Tools
-            icon={<SiPostman className="text-orange-500" size="28" />}
-            toolname="Postman"
-          />
-          <Tools
-            icon={<SiGithub className="text-purple-500" size="28" />}
-            toolname="Github"
-          />
+          <Tools icon={<SiAzuredevops className="text-blue-500" size="50" />} />
+          <Tools icon={<SiPostman className="text-orange-500" size="50" />} />
+          <Tools icon={<SiGithub className="text-purple-500" size="50" />} />
         </div>
       </div>
     </>
@@ -109,16 +92,15 @@ const Skill = ({ icon, skilltitle = "Skill Title", covered = "w-full" }) => {
         <div>{skilltitle}</div>
       </h2>
       <div className={"h-1 " + covered}>
-        <div className="bg-blue-600 dark:bg-green-500 h-1 animation-progress "></div>
+        <div className="bg-blue-500 dark:bg-green-500 h-1 animation-progress "></div>
       </div>
     </div>
   );
 };
-const Tools = ({ icon, toolname = "Tool Name" }) => {
+const Tools = ({ icon }) => {
   return (
     <div className="flex-col m-4">
       <div className="flex justify-center items-center mr-2">{icon}</div>
-      <div className="text-gray-800 dark:text-gray-300">{toolname}</div>
     </div>
   );
 };
