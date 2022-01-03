@@ -17,7 +17,7 @@ body ::-webkit-scrollbar {
     @apply relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
   bg-gray-400 hover:bg-blue-600 dark:bg-gray-800 
-  text-blue-500 dark:text-green-500 hover:text-white
+  text-blue-500 hover:text-white
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
     cursor-pointer shadow-lg;
@@ -38,17 +38,16 @@ body ::-webkit-scrollbar {
 
   .top-navigation {
     @apply flex flex-row items-center justify-evenly 
-    bg-gray-300 dark:bg-gray-700 bg-opacity-90 
+    bg-gray-300 dark:bg-gray-900 bg-opacity-90 
     w-full h-16 
     m-0 
     shadow-lg;
   }
 
   .top-navigation-icon {
-    @apply text-gray-500
-    mr-3 ml-4
+    @apply mr-3 ml-4
     transition duration-300 ease-in-out 
-    hover:text-blue-500 dark:hover:text-yellow-400
+    text-indigo-500 dark:text-yellow-400
     cursor-pointer;
   }
 
@@ -64,7 +63,7 @@ body ::-webkit-scrollbar {
 
   .content-container {
     @apply flex flex-col 
-    bg-gray-300 dark:bg-gray-700
+    bg-gray-200 dark:bg-gray-900
     m-0 
     h-full w-full 
     overflow-hidden;
@@ -87,10 +86,10 @@ body ::-webkit-scrollbar {
       0 4px 6px -2px rgba(0, 0, 0, 0.02);
   }
   .card-div {
-    @apply bg-gray-50 dark:bg-gray-600 p-6 rounded-lg shadow-lg w-5/6;
+    @apply bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg w-5/6;
   }
   .skill-header-text {
-    @apply leading-7 sm:truncate mb-4 text-gray-500 dark:text-gray-400;
+    @apply leading-7 sm:truncate mb-4 text-gray-500 dark:text-gray-200;
   }
 }
 

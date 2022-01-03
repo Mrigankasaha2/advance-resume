@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="container bg-gray-400 dark:bg-gray-600 mx-auto w-full rounded-lg">
+    <div className="container bg-gray-300 dark:bg-gray-800 mx-auto w-full rounded-lg">
       <div className="relative wrap overflow-hidden h-full p-2 sm:p-10">
         <div
-          className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+          className="border-2-2 absolute border-opacity-20 border-gray-700 dark:border-gray-500 h-full border"
           style={{ left: "50%" }}
         ></div>
         <SectionRight
@@ -60,7 +60,7 @@ const SectionLeft = ({
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto text-white font-semibold text-lg">{number}</h1>
       </div>
-      <div className="order-1 bg-blue-400 dark:bg-blue-600 rounded-lg shadow-xl w-5/12 py-4 px-2 sm:px-6">
+      <div className="order-1 bg-blue-500 dark:bg-blue-600 rounded-lg shadow-xl w-5/12 py-4 px-2 sm:px-6">
         <h3 className="mb-3 font-bold text-white text-xl">{compantName}</h3>
         <h3 className="mb-3 text-gray-300 text-sm">{duration}</h3>
         <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">

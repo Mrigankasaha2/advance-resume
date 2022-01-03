@@ -3,7 +3,7 @@ import { SiLinkedin, SiFacebook, SiGithub, SiTwitter } from "react-icons/si";
 
 export default function Aboutme() {
   return (
-    <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 dark:bg-gray-800 mx-4">
+    <figure className="md:flex bg-white dark:bg-gray-700 rounded-xl p-8 md:p-0 mx-4">
       <img
         className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
         src="https://avatars.dicebear.com/api/avataaars/Mrigsasdasdaasddddddddd.svg"
@@ -19,7 +19,7 @@ export default function Aboutme() {
           </p>
         </blockquote>
         <figcaption className="font-medium">
-          <div className="text-sky-500 dark:text-sky-400">
+          <div className="text-indigo-500 dark:text-indigo-400">
             Mriganka Shekhar Saha
           </div>
           <div className="text-gray-700 dark:text-gray-500">
