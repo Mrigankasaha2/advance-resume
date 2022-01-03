@@ -19,7 +19,7 @@ export default function Aboutme() {
           </p>
         </blockquote>
         <figcaption className="font-medium">
-          <div className="text-sky-500 dark:text-sky-400">
+          <div className="text-indigo-500 dark:text-indigo-400">
             Mriganka Shekhar Saha
           </div>
           <div className="text-gray-700 dark:text-gray-500">

@@ -87,12 +87,12 @@ export default function Skills() {
 const Skill = ({ icon, skilltitle = "Skill Title", covered = "w-full" }) => {
   return (
     <div className="mb-2">
-      <h2 className="mb-2 text-gray-800 dark:text-gray-400 flex flex-row text-lg">
+      <h2 className="mb-2 text-gray-800 dark:text-gray-500 flex flex-row text-lg">
         <div className="flex justify-center items-center mr-2">{icon}</div>
         <div>{skilltitle}</div>
       </h2>
       <div className={"h-1 " + covered}>
-        <div className="bg-blue-500 dark:bg-green-500 h-1 animation-progress "></div>
+        <div className="bg-blue-500 h-1 animation-progress "></div>
       </div>
     </div>
   );
