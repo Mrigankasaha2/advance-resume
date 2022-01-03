@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaHome, FaUserGraduate, FaUserAlt } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { SiVisualstudiocode } from "react-icons/si";
@@ -9,24 +10,24 @@ export default function Sidebar() {
       className="fixed top-0 left-0 h-screen w-16 flex flex-col
                   bg-white dark:bg-gray-900 shadow-lg"
     >
-      <a href="/">
+      <Link to="/">
         <SideBarIcon icon={<FaHome size="28" />} text="Home" />
-      </a>
+      </Link>
       <Divider />
-      <a href="/experience">
+      <Link to="/experience">
         <SideBarIcon icon={<MdWork size="32" />} text="Experience" />
-      </a>
-      <a href="/skills">
+      </Link>
+      <Link to="/skills">
         <SideBarIcon icon={<SiVisualstudiocode size="20" />} text="Skills" />
-      </a>
+      </Link>
 
-      <a href="/education">
+      <Link to="/education">
         <SideBarIcon icon={<FaUserGraduate size="20" />} text="Education" />
-      </a>
+      </Link>
       <Divider />
-      <a href="/about">
+      <Link to="/about">
         <SideBarIcon icon={<FaUserAlt size="22" />} text="About" />
-      </a>
+      </Link>
     </div>
   );
 }
