@@ -7,6 +7,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Aboutme from "./Aboutme";
 import Footer from "./Footer";
+import ErrorPage from "./ErrorPage";
 
 export default function ContentContainer() {
   return (
@@ -19,6 +20,7 @@ export default function ContentContainer() {
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/about" element={<Aboutme />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
 
