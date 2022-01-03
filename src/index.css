@@ -90,7 +90,7 @@ body ::-webkit-scrollbar {
     @apply bg-gray-50 dark:bg-gray-600 p-6 rounded-lg shadow-lg w-5/6;
   }
   .skill-header-text {
-    @apply leading-7 sm:truncate mb-4 text-blue-500 dark:text-green-500;
+    @apply leading-7 sm:truncate mb-4 text-gray-500 dark:text-gray-400;
   }
 }
 
