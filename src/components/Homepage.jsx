@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Homepage() {
+  let navigate = useNavigate();
   return (
     <div>
       <div className="text-center pb-12 md:pb-16">
@@ -16,18 +18,22 @@ export default function Homepage() {
             currently working for a Big4 accountancy farm.
           </p>
           <div className="max-w-xs mx-auto sm:max-w-none flex flex-col sm:flex-row justify-center items-center">
-            <a
+            <button
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-48 m-4"
-              href="/skills"
+              onClick={() => {
+                navigate("/skills");
+              }}
             >
               View My Skills
-            </a>
-            <a
+            </button>
+            <button
               className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-48 m-4"
-              href="/about"
+              onClick={() => {
+                navigate("/about");
+              }}
             >
               Learn More
-            </a>
+            </button>
           </div>
         </div>
       </div>
