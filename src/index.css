@@ -72,7 +72,7 @@ body ::-webkit-scrollbar {
   .content-list {
     @apply flex flex-col items-center 
     h-[calc(100vh_-_12rem)] w-full 
-    mt-16 ml-0 mx-auto pr-0 pl-16 pb-12 
+    ml-0 mx-auto pr-0 pl-16 pb-12 mt-4 sm:mt-16
     overflow-y-scroll;
   }
   .animation-progress {
