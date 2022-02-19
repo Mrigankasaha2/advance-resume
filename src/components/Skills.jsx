@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SiCsharp,
   SiMicrosoftazure,
@@ -17,24 +17,36 @@ import {
   SiCss3,
   SiTailwindcss,
   SiMaterialdesign,
-} from "react-icons/si";
-import { FaSass, FaBootstrap } from "react-icons/fa";
+} from 'react-icons/si';
+import { FaSass, FaBootstrap } from 'react-icons/fa';
 
 export default function Skills() {
   return (
     <>
       <div className="card-div">
         <h2 className="skill-header-text">Skills</h2>
-        <Skill icon={<SiCsharp />} skilltitle=".NET Core" covered="w-5/6" />
         <Skill
-          icon={<SiMicrosoftazure />}
+          icon={<SiCsharp className="text-green-700" />}
+          skilltitle=".NET Core"
+          covered="w-5/6"
+        />
+        <Skill
+          icon={<SiMicrosoftazure className="text-blue-600" />}
           skilltitle="Microsoft Azure"
           covered="w-4/6"
         />
-        <Skill icon={<SiAngular />} skilltitle="Angular" covered="w-4/6" />
-        <Skill icon={<SiReact />} skilltitle="React" covered="w-3/5" />
         <Skill
-          icon={<SiMicrosoftsqlserver />}
+          icon={<SiAngular className="text-red-600" />}
+          skilltitle="Angular"
+          covered="w-4/6"
+        />
+        <Skill
+          icon={<SiReact className="text-cyan-500" />}
+          skilltitle="React"
+          covered="w-3/5"
+        />
+        <Skill
+          icon={<SiMicrosoftsqlserver className="text-red-500" />}
           skilltitle="SQL Server"
           covered="w-11/12"
         />
@@ -84,14 +96,14 @@ export default function Skills() {
     </>
   );
 }
-const Skill = ({ icon, skilltitle = "Skill Title", covered = "w-full" }) => {
+const Skill = ({ icon, skilltitle = 'Skill Title', covered = 'w-full' }) => {
   return (
     <div className="mb-2">
       <h2 className="mb-2 text-gray-800 dark:text-gray-500 flex flex-row text-lg">
         <div className="flex justify-center items-center mr-2">{icon}</div>
         <div>{skilltitle}</div>
       </h2>
-      <div className={"h-1 " + covered}>
+      <div className={'h-1 ' + covered}>
         <div className="bg-blue-500 h-1 animation-progress "></div>
       </div>
     </div>
