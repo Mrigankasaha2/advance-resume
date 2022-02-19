@@ -1,5 +1,5 @@
-import React from "react";
-import { SiLinkedin, SiFacebook, SiGithub, SiTwitter } from "react-icons/si";
+import { SiLinkedin, SiFacebook, SiGithub, SiTwitter } from 'react-icons/si';
+import { FaDownload } from 'react-icons/fa';
 
 export default function Aboutme() {
   return (
@@ -26,10 +26,17 @@ export default function Aboutme() {
             - Senior Software Engineer, EY
           </div>
         </figcaption>
+        <button
+          type="button"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          <FaDownload className="mr-2 -ml-1 w-5 h-5" />
+          Download Resume
+        </button>
       </div>
       <div className="pt-4 pb-2">
         <Socialmediaicons
-          icons={<SiLinkedin size={28} className="text-blue-500" />}
+          icons={<SiLinkedin size={28} className="text-blue-700" />}
           link="https://www.linkedin.com/in/mriganka-saha-ba16ba13b/"
         />
         <Socialmediaicons
@@ -37,23 +44,23 @@ export default function Aboutme() {
           link="https://github.com/Mrigankasaha2"
         />
         <Socialmediaicons
-          icons={<SiTwitter size={28} className="text-blue-400" />}
+          icons={<SiTwitter size={28} className="text-blue-600" />}
           link="https://twitter.com/beingmriganka"
         />
         <Socialmediaicons
-          icons={<SiFacebook size={28} className="text-blue-500" />}
+          icons={<SiFacebook size={28} className="text-blue-600" />}
           link="https://www.facebook.com/mriganka.saha.1996"
         />
       </div>
     </figure>
   );
 }
-const Socialmediaicons = ({ icons, link = "" }) => {
+const Socialmediaicons = ({ icons, link = '' }) => {
   return (
     <a
-      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+      className="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
       href={link}
-      target={"_blank"}
+      target={'_blank'}
       rel="noreferrer"
     >
       {icons}
