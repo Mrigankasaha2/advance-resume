@@ -1,7 +1,7 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { FaMoon, FaSun } from "react-icons/fa";
-import useDarkMode from "../hooks/useDarkMode";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaMoon, FaSun } from 'react-icons/fa';
+import useDarkMode from '../hooks/useDarkMode';
 
 export default function TopNavigation() {
   const [darkTheme, setDarkTheme] = useDarkMode();
@@ -12,16 +12,22 @@ export default function TopNavigation() {
       <h5
         className="title-text cursor-pointer"
         onClick={() => {
-          navigate("/");
+          navigate('/');
         }}
       >
         Mriganka Resume
       </h5>
       <span onClick={handleMode}>
         {darkTheme ? (
-          <FaSun size="24" className="top-navigation-icon" />
+          <FaSun
+            size="24"
+            className="top-navigation-icon hover:text-yellow-500"
+          />
         ) : (
-          <FaMoon size="24" className="top-navigation-icon" />
+          <FaMoon
+            size="24"
+            className="top-navigation-icon hover:text-indigo-500"
+          />
         )}
       </span>
     </div>

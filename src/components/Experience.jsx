@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Experience() {
   return (
@@ -6,13 +6,13 @@ export default function Experience() {
       <div className="relative wrap overflow-hidden h-full p-2 sm:p-10">
         <div
           className="border-2-2 absolute border-opacity-20 border-gray-700 dark:border-gray-500 h-full border"
-          style={{ left: "50%" }}
+          style={{ left: '50%' }}
         ></div>
         <SectionRight
           number="1"
           compantName="EY"
           duration="2021 - Present"
-          description=".NET Developer with Azure, SQL Serrver, React and Angular"
+          description="Working in Open Banking project with .NET Core Microservices, Azure SQL Database and Angular Frontend."
         />
         <SectionLeft
           number="2"
@@ -26,9 +26,9 @@ export default function Experience() {
 }
 const SectionRight = ({
   number,
-  compantName = "",
-  duration = "",
-  description = "",
+  compantName = '',
+  duration = '',
+  description = '',
 }) => {
   return (
     <div className="mb-8 flex justify-between items-center w-full right-timeline">
@@ -40,7 +40,7 @@ const SectionRight = ({
         <h3 className="mb-3 font-bold text-gray-800 dark:text-gray-100 text-xl">
           {compantName}
         </h3>
-        <h3 className="mb-3 text-gray-500 text-sm">{duration}</h3>
+        <h3 className="mb-3 text-gray-500 text-xs">{duration}</h3>
         <p className="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-400 text-opacity-100">
           {description}
         </p>
@@ -50,9 +50,9 @@ const SectionRight = ({
 };
 const SectionLeft = ({
   number,
-  compantName = "",
-  duration = "",
-  description = "",
+  compantName = '',
+  duration = '',
+  description = '',
 }) => {
   return (
     <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
