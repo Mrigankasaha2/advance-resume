@@ -93,8 +93,6 @@ body ::-webkit-scrollbar {
   }
 }
 
-@tailwind utilities;
-
 @keyframes progressBar {
   0% {
     width: 0;
