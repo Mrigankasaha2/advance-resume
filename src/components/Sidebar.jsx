@@ -1,8 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaHome, FaUserGraduate, FaUserAlt } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { SiVisualstudiocode } from "react-icons/si";
+import { Link } from 'react-router-dom';
+import { FaHome, FaUserGraduate, FaUserAlt, FaFilePdf } from 'react-icons/fa';
+import { MdWork } from 'react-icons/md';
+import { SiVisualstudiocode } from 'react-icons/si';
 
 export default function Sidebar() {
   return (
@@ -28,11 +27,14 @@ export default function Sidebar() {
       <Link to="/about">
         <SideBarIcon icon={<FaUserAlt size="22" />} text="About" />
       </Link>
+      <Link to="./files/resume.pdf" target="_blank">
+        <SideBarIcon icon={<FaFilePdf size="22" />} text="Resume" />
+      </Link>
     </div>
   );
 }
 
-const SideBarIcon = ({ icon, text = "tooltip 💡" }) => (
+const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
   <div className="sidebar-icon group">
     {icon}
     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
