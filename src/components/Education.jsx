@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react';
 
 export default function Education() {
   return (
@@ -26,9 +27,9 @@ export default function Education() {
 }
 const EducationDetails = ({
   Year,
-  InstituteName = "",
-  University = "",
-  Subject = "",
+  InstituteName = '',
+  University = '',
+  Subject = '',
 }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg p-6 m-4">

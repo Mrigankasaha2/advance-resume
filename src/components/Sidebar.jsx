@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaUserGraduate, FaUserAlt, FaFilePdf } from 'react-icons/fa';
 import { MdWork } from 'react-icons/md';

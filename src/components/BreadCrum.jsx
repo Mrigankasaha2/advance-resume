@@ -1,3 +1,4 @@
+import React from 'react';
 import { AiOutlineRight, AiFillHome } from 'react-icons/ai';
 import { useLocation, Link } from 'react-router-dom';
 export default function BreadCrum() {
@@ -7,17 +8,17 @@ export default function BreadCrum() {
   }
   return (
     <nav className="flex ml-20 mt-2" aria-label="Breadcrumb">
-      <ol className="inline-flex items-center space-x-1 md:space-x-3">
-        <li className="inline-flex items-center">
-          <Link
-            to="/"
-            className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-          >
-            <AiFillHome className="mr-2 w-4 h-4" />
-            Home
-          </Link>
-        </li>
-        {location === '' ? null : (
+      {location === '' ? null : (
+        <ol className="inline-flex items-center space-x-1 md:space-x-3">
+          <li className="inline-flex items-center">
+            <Link
+              to="/"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
+              <AiFillHome className="mr-2 w-4 h-4" />
+              Home
+            </Link>
+          </li>
           <li>
             <div className="flex items-center">
               <AiOutlineRight className="w-4 h-4 text-gray-400" />
@@ -26,8 +27,8 @@ export default function BreadCrum() {
               </span>
             </div>
           </li>
-        )}
-      </ol>
+        </ol>
+      )}
     </nav>
   );
 }
