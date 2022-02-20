@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 export default function Experience() {
   return (
     <div className="container bg-gray-300 dark:bg-gray-800 mx-auto w-full rounded-lg">

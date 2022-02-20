@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { SiGmail, SiWhatsapp } from 'react-icons/si';
 import { FaPhone } from 'react-icons/fa';
 

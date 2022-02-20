@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { SiLinkedin, SiFacebook, SiGithub, SiTwitter } from 'react-icons/si';
 import { FaDownload } from 'react-icons/fa';
 

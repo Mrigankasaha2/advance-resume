@@ -1,6 +1,7 @@
-import Sidebar from "./components/Sidebar";
-import ContentContainer from "./components/ContentContainer";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import ContentContainer from './components/ContentContainer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
